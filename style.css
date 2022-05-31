@@ -1,0 +1,69 @@
+body h1{
+    text-align: center;
+    font-size: 70px;
+    line-height: 100px;
+
+}
+body {
+    color: #222;
+    font-size: 150%;
+    line-height: 125%;
+    margin: 0;
+    padding-bottom: 1000px;
+    background: -webkit-linear-gradient(to right, #4ca2cd, #eea0d8); 
+    background: linear-gradient(to right, #4ca2cd, #eea0d8); 
+   
+}
+.profile-card{
+    float:left;
+    width: 10%;
+    position:relative;
+    left: 250px ;
+    top: 50px;
+    padding: 25px 25px 0px 25px;
+    border:dotted 5px;
+}
+.profile-card .profile-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    line-height: 125%;
+    position:relative;
+    top: -25px;
+}
+.profile-card .profile-desc{
+    position:relative;
+    top: -25px;
+}
+
+.desc-table{
+    float:right;
+    width: 35%;
+    color: #222;
+    font-size: 30px;
+    line-height: 45px;
+    position:relative;
+    top: 50px;
+    left: -250px;
+    padding: 25px 25px 25px 0px;
+    border:dotted 5px;
+}
+.desc-table .table-title{
+    font-size: 150%;
+}
+.profile-card .student-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+}
+.list{
+    padding: 10px 50px;
+    width:29%;
+    position:relative;
+    top: 550px;
+    left: 842px;
+    border:dotted 5px;
+}
