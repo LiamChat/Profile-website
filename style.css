@@ -1,69 +1,213 @@
-body h1{
-    text-align: center;
-    font-size: 70px;
-    line-height: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-}
-body {
-    color: #222;
-    font-size: 150%;
-    line-height: 125%;
+*{
     margin: 0;
-    padding-bottom: 1000px;
-    background: -webkit-linear-gradient(to right, #4ca2cd, #eea0d8); 
-    background: linear-gradient(to right, #4ca2cd, #eea0d8); 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
    
 }
-.profile-card{
-    float:left;
-    width: 10%;
-    position:relative;
-    left: 250px ;
-    top: 50px;
-    padding: 25px 25px 0px 25px;
-    border:dotted 5px;
+a{
+    text-decoration: none;
 }
-.profile-card .profile-title{
-    text-align: center;
-    font-weight: bold;
-    font-size: 150%;
-    line-height: 125%;
-    position:relative;
-    top: -25px;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 70px;
+    background-color: lightgray;
+    opacity:0.8;
+    position : sticky;
+    top: 0;
+    height: 100px;
+    z-index: 2;
+    
 }
-.profile-card .profile-desc{
-    position:relative;
-    top: -25px;
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 26px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+
+}
+nav ul li a:hover{
+    color: #e0473c;
+
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    height:940px;
+}
+#home::before{
+    content:"";
+    width: 100%;
+    height: 1040px;
+    background: url(waterman.jpg);
+    background-position-y: -150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.home-content{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    align-items: left;
+}
+.home-content .title{
+    display:flex;
+    color: #1f1f25;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #fe671c 20%, #7644ff 50%,#fd4766 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home-content h1{
+    display:flex;
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 100%;
+}
+.home-content p{
+    display:flex;
+    width: 55%;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+#about{
+    display:flex;
+    flex-direction: column;
+    height:750px;
+    background-color: lightskyblue;
+}
+#about::before{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 40px;
+    width:100%;
+    font-family: century;
+   
+    box-sizing: border-box;
+}
+#about h2{
+    padding-top: 35px;
+}
+.headings{
+    display:flex;
+    flex-direction:column;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.student-img {
+    display:flex;
+    width: 20%;
+    border-radius: 20%;
+    margin-left: 200px;
+}
+.pfp-text{
+    display:flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: justify;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 350px;
+    top: 1250px;
+    background-color: white;
+    border:1px dotted black;
+    padding:30px;
+    border-radius: 50px;;
+}
+.pic{
+    display: flex;
+    flex-direction:column;
+}
+#Portfolio::before{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+}
+#Portfolio{
+    display:flex;
+    flex-direction:column;
+    height:1000px;
+    background-color: lightcoral;
+    box-sizing: border-box;
+}
+#Portfolio h1{
+    padding-top: 30px;
+}
+.box{
+
+    width:350px;
+    height:650px;
+    margin: 10px;
+    background-color: white;
+    border:dotted black;
+    border-radius: 50px;
+    background-size:100% 200%;
+    transition: all 0.6s;
+    align-items: center;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+.box:hover{
+    background-color: skyblue;
 }
 
-.desc-table{
-    float:right;
-    width: 35%;
-    color: #222;
-    font-size: 30px;
-    line-height: 45px;
-    position:relative;
-    top: 50px;
-    left: -250px;
-    padding: 25px 25px 25px 0px;
-    border:dotted 5px;
+.box ul{
+    list-style-type: square;
+    margin: 0px 30px;
+    font-size: 1.1em;
+    line-height: 2em;
 }
-.desc-table .table-title{
-    font-size: 150%;
+.box2{
+    position: absolute;
+    right: 375px;
+    top: 1950px;
+    
 }
-.profile-card .student-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 10px auto;
-    border: 5px solid #ccc;
-    border-radius: 50%;
+.box1{
+    position: absolute;
+    left: 375px; 
+    top: 1950px;
 }
-.list{
-    padding: 10px 50px;
-    width:29%;
-    position:relative;
-    top: 550px;
-    left: 842px;
-    border:dotted 5px;
+#Contact{
+    height: 75px;
+    background-color:black;
+    display:flex;
+    flex-direction: column;
 }
+#Contact p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    padding-top:25px;
+}
+
+
